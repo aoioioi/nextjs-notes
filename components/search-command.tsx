@@ -33,7 +33,7 @@ export const SearchCommand = () => {
     };
 
     document.addEventListener("keydown", down);
-    // NOTE: Unmount to prevent overflow
+
     return () => document.removeEventListener("keydown", down);
   }, [toggle]);
 

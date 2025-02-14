@@ -71,7 +71,6 @@ export const Navigation = () => {
   const handleMouseUp = () => {
     isResizingRef.current = false;
     document.removeEventListener("mousemove", handleMouseMove);
-    // TODO: why does this work
     document.removeEventListener("mouseup", handleMouseUp);
   };
 
